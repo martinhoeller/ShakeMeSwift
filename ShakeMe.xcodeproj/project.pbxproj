@@ -12,6 +12,12 @@
 		5B65490F230033F0008E0271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B65490D230033F0008E0271 /* Main.storyboard */; };
 		5B654911230033F2008E0271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B654910230033F2008E0271 /* Assets.xcassets */; };
 		5B654914230033F2008E0271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B654912230033F2008E0271 /* LaunchScreen.storyboard */; };
+		5B65491D2300341E008E0271 /* batman.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5B65491B2300341E008E0271 /* batman.gif */; };
+		5B65491E2300341E008E0271 /* batman_on_drugs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B65491C2300341E008E0271 /* batman_on_drugs.mp3 */; };
+		5B65492123003558008E0271 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B65492023003558008E0271 /* WebKit.framework */; };
+		5B654923230036B4008E0271 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B654922230036B4008E0271 /* CoreMotion.framework */; };
+		5B65492523003B0A008E0271 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B65492423003B09008E0271 /* AVFoundation.framework */; };
+		5B65492723003F28008E0271 /* ShakeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B65492623003F28008E0271 /* ShakeDetector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		5B654910230033F2008E0271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B654913230033F2008E0271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B654915230033F2008E0271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B65491B2300341E008E0271 /* batman.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = batman.gif; sourceTree = "<group>"; };
+		5B65491C2300341E008E0271 /* batman_on_drugs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = batman_on_drugs.mp3; sourceTree = "<group>"; };
+		5B65492023003558008E0271 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		5B654922230036B4008E0271 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		5B65492423003B09008E0271 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5B65492623003F28008E0271 /* ShakeDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDetector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B65492523003B0A008E0271 /* AVFoundation.framework in Frameworks */,
+				5B654923230036B4008E0271 /* CoreMotion.framework in Frameworks */,
+				5B65492123003558008E0271 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,7 @@
 			children = (
 				5B654908230033F0008E0271 /* ShakeMe */,
 				5B654907230033F0008E0271 /* Products */,
+				5B65491F23003557008E0271 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +72,25 @@
 			children = (
 				5B654909230033F0008E0271 /* AppDelegate.swift */,
 				5B65490B230033F0008E0271 /* ViewController.swift */,
+				5B65492623003F28008E0271 /* ShakeDetector.swift */,
 				5B65490D230033F0008E0271 /* Main.storyboard */,
 				5B654910230033F2008E0271 /* Assets.xcassets */,
 				5B654912230033F2008E0271 /* LaunchScreen.storyboard */,
 				5B654915230033F2008E0271 /* Info.plist */,
+				5B65491C2300341E008E0271 /* batman_on_drugs.mp3 */,
+				5B65491B2300341E008E0271 /* batman.gif */,
 			);
 			path = ShakeMe;
+			sourceTree = "<group>";
+		};
+		5B65491F23003557008E0271 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B65492423003B09008E0271 /* AVFoundation.framework */,
+				5B654922230036B4008E0271 /* CoreMotion.framework */,
+				5B65492023003558008E0271 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B654914230033F2008E0271 /* LaunchScreen.storyboard in Resources */,
+				5B65491D2300341E008E0271 /* batman.gif in Resources */,
+				5B65491E2300341E008E0271 /* batman_on_drugs.mp3 in Resources */,
 				5B654911230033F2008E0271 /* Assets.xcassets in Resources */,
 				5B65490F230033F0008E0271 /* Main.storyboard in Resources */,
 			);
@@ -136,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B65490C230033F0008E0271 /* ViewController.swift in Sources */,
+				5B65492723003F28008E0271 /* ShakeDetector.swift in Sources */,
 				5B65490A230033F0008E0271 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
